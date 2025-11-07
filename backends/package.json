@@ -1,12 +1,12 @@
 {
-  "name": "tests",
+  "name": "wild-horizons",
   "version": "1.0.0",
+  "description": "a dataset of the planet's most intesresting places",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Elvado",
-  "license": "ISC",
-  "description": ""
+  "author": "Elvadinho",
+  "license": "ISC"
 }
