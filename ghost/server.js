@@ -1,0 +1,13 @@
+import http from "node:http";
+import path from "node:path";
+import { serverStatic } from "./utils/serverStatic.js";
+
+const PORT = 8000;
+
+const __dirname = import.meta.dirname;
+
+const server = http.createServer(async (req, res) => {
+  await serverStatic(req, res, __dirname);
+});
+
+server.listen(PORT, () => console.log(`Connected on Port: ${PORT}`));
